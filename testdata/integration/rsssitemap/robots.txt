@@ -1,0 +1,4 @@
+User-Agent: *
+Disallow: /secret
+
+Sitemap: https://example.com/feed.rss

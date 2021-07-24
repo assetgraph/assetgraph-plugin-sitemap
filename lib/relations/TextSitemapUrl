@@ -1,0 +1,17 @@
+const Relation = require('assetgraph/lib/relations/Relation');
+
+class TextSitemapUrl extends Relation {
+  inline() {
+    throw new Error('TextSitemapUrl.inline: Not supported');
+  }
+
+  attach() {
+    throw new Error('TextSitemapUrl.attach: Not supported');
+  }
+
+  detach() {
+    throw new Error('TextSitemapUrl.detach: Not supported');
+  }
+}
+
+module.exports = TextSitemapUrl;

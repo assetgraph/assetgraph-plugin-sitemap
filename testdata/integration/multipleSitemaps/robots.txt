@@ -1,0 +1,5 @@
+User-Agent: *
+Disallow: /secret
+
+Sitemap: https://example.com/sitemap.txt
+Sitemap: https://example.com/sitemap.xml
