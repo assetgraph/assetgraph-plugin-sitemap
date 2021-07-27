@@ -2,7 +2,7 @@
     "name": "assetgraph-plugin-sitemap",
     "description": "An Assetgraph plugin that adds support for robots.txt and sitemaps",
     "repository": "git://github.com/assetgraph/assetgraph-plugin-sitemap.git",
-    "version": "0.0.0",
+    "version": "1.0.0",
     "license": "BSD-3-Clause",
     "maintainers": [
         {
