@@ -1,5 +1,10 @@
 # assetgraph-plugin-sitemap
 
+[![NPM version](https://badge.fury.io/js/assetgraph-plugin-sitemap.svg)](http://badge.fury.io/js/assetgraph-plugin-sitemap)
+[![Build Status](https://travis-ci.org/assetgraph/assetgraph-plugin-sitemap.svg?branch=master)](https://travis-ci.org/assetgraph/assetgraph-plugin-sitemap)
+[![Coverage Status](https://img.shields.io/coveralls/assetgraph/assetgraph-plugin-sitemap.svg)](https://coveralls.io/r/assetgraph/assetgraph-plugin-sitemap?branch=master)
+[![dependencies Status](https://status.david-dm.org/gh/assetgraph/assetgraph-plugin-sitemap.svg)](https://david-dm.org/assetgraph/assetgraph-plugin-sitemap)
+
 A plugin of assets and relations relating to sitemaps.
 
 This plugin is especially useful if you intend to crawl your entire website, which might contain landing pages that are not linked to in your site navigation structure.
