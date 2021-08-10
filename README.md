@@ -59,14 +59,14 @@ main();
 
 ### New Relations
 - `RobotsSitemap` - A relation to any sitemap format, starting from the `Sitemap: ` directive in `robots.txt`
-- `XmlSitemapUrl` - A relation to a page, starting from the XML sitemap [`<url>` element](https://en.wikipedia.org/wiki/Sitemaps#Element_definitions)
+- `XmlSitemapUrl` - A relation to a page, starting from the XML sitemap [`<loc>` element](https://en.wikipedia.org/wiki/Sitemaps#Element_definitions)
 - `TextSitemapUrl` - A relation to a page, starting from a URL line in `TextSitemap`
 
 ### New behavior
 
 `robots.txt` is automatically upgraded from a `Text` asset to a `Robots` asset, which also discovers the `Sitemap:`-directives in `robots.txt` and adds `RobotsSitemap` relations to the graph.
 
-XML sitemaps are automatically upgraded from an `Xml` asset to a `XmlSitemap` asset based on the `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">` content. `<url>` elements in the Xml sitemap automatically add `XmlSitemapUrl` relations to the graph.
+XML sitemaps are automatically upgraded from an `Xml` asset to a `XmlSitemap` asset based on the `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">` content. `<loc>` elements in the Xml sitemap automatically add `XmlSitemapUrl` relations to the graph.
 
 While `TextSitemap` assets now exist, they cannot be automatically inferred based on their contents alone. This means that a `Text` asset can only be automatically upgraded to a `TextSitemap` asset based on an incoming `RobotsSitemap` relation. It is recommended to always add a `Sitemap:`-directive to your `robots.txt` and initialize your assetgraph from there in order to have `TextSitemap` work correctly. When a `TextSitemap` is inferred, `TextSitemapUrl` relations are added to the graph for each URL line in the text file.
 

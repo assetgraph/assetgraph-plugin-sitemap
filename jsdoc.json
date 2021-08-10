@@ -8,7 +8,7 @@
   },
 
   "source": {
-    "include": "lib",
+    "include": ["package.json", "lib"],
     "includePattern": ".js$"
   },
 
